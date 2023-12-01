@@ -9,8 +9,8 @@
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  z-index: 1;
   background-color: white;
+  z-index: 9999;
 }
 .icon {
   width: 100%;
@@ -57,11 +57,12 @@
   margin-left: 50px;
 }
 .apple-choice {
-  padding: 10px 10px;
+  padding: 8px 10px;
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 19px;
+  width: 90%;
 }
 .game-choice {
   padding: 10px 10px;
@@ -82,12 +83,15 @@
 .content {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 16%;
+  padding: 21px 31px;
+  background: #80808014;
+  border-radius: 30px;
+  height: auto;
 }
 .content-div {
   display: flex;
   gap: 37px;
-  padding: 0 40px;
 }
 .blue-content {
   display: flex;
@@ -106,25 +110,27 @@
   left: 80%;
 }
 .content-app-update {
-  padding: 10px 45px;
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
 }
 .app-update {
   display: flex;
   align-items: center;
+  width: 32%;
+  height: 32%;
 }
 .content-updates {
   display: flex;
-  flex-direction: row;
-  padding: 20px 80px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .img-update {
   width: 60px;
 }
 .h2-update {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -132,28 +138,455 @@
   color: #0000ff66;
 }
 .div-content-text-update {
-  padding: 13px 9px;
+  padding-left: 16px;
+  flex: 1;
+}
+.div-content-text-update p {
+  font-size: 12px;
+  opacity: 0.7;
 }
 .button-decription {
   border: 1px solid #0000ff66;
-  width: 100%;
   border-radius: 10px;
   background: white;
   color: #0000ff66;
   font-weight: bold;
+  height: 30px;
 }
 .button-decription:hover {
   border: 1px solid #0000ff66;
-  width: 100%;
   border-radius: 10px;
   background: #0000ff66;
   color: white;
   font-weight: bold;
 }
-.button-app-update {
-  width: 25%;
+.p-update {
+  font-size: 10px;
+  opacity: 0.7;
 }
-.button-app-update p {
-  font-size: 13px;
+.btn-desc {
+  font-size: 12px;
   text-align: center;
+  opacity: 0.7;
+}
+.popular-instuction {
+  display: flex;
+}
+.content-app-popular {
+  width: 50%;
+  padding: 20px 0px;
+}
+.header-app-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.header-app-instruction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.header-app-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header-app-film {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0 37px 0;
+}
+.content-app-instruction {
+  width: 50%;
+  padding: 20px 20px;
+}
+.img-app-popular {
+  background: #0a58ca45;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 12px 12px 0 0;
+}
+.img-app-popular img {
+  width: 70px;
+}
+.div-app-popular {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app-popular {
+  width: 50%;
+  padding: 0px 10px;
+}
+.topic-description h3 {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.topic-description h3:hover {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0000ff66;
+}
+.topic-description p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.tail-header {
+  padding: 3px 10px;
+  background: white;
+  border-radius: 0 0 12px 12px;
+}
+.info {
+  display: flex;
+  gap: 5px;
+}
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  border-top: 1px dashed rgb(168, 167, 167);
+  padding: 10px 0px 0px 0;
+}
+.img-experience {
+  background-image: url(images/tutorial/Teamwork-and-Startup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 15px 20px;
+  height: 207px;
+  /* width: 200px; */
+  font-size: 12px;
+  background-color: #e1e776;
+  border-radius: 10px;
+}
+
+.film-app-contruction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.film-app {
+  display: flex;
+  align-items: center;
+}
+.img-app-film img {
+  width: 70px;
+}
+.content-film-app {
+  padding-left: 16px;
+  flex: 1;
+}
+.content-film-app h2 {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content-film-app p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.error-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0px;
+}
+.img-error-app {
+  width: 30%;
+}
+.img-error-app img {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+}
+.content-error-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.content-error-desc {
+  opacity: 0.7;
+}
+.img-game-app {
+  background-image: url(images/new-game/metro.jpg);
+  background-size: contain;
+  width: 50%;
+  height: 600px;
+  position: relative;
+}
+.title-game-app h2 {
+  color: white;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.title-game-app h2:hover {
+  color: #596be8;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.img-info-app {
+  position: absolute;
+  bottom: 0;
+  margin-left: 13px;
+}
+.action p {
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  width: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+.action p:hover {
+  background-color: #596be8;
+  padding: 3px;
+  border-radius: 10px;
+  width: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+.info-game-app {
+  display: flex;
+  justify-content: space-between;
+}
+.info-game {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+}
+.button-decription-game {
+  border: 1px solid #0000ff66;
+  border-radius: 10px;
+  background: white;
+  color: #0000ff66;
+  font-weight: bold;
+  height: 30px;
+  padding: 3px 20px;
+}
+.button-decription-game:hover {
+  border: 1px solid #0000ff66;
+  border-radius: 10px;
+  background: #596be8;
+  color: white;
+  font-weight: bold;
+  padding: 3px 20px;
+}
+.btn-desc-game {
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.7;
+  color: gray;
+}
+.game-app-main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.game-menu-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.game-menu-elements {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 165px;
+}
+.game-menu-elements img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 15px;
+  height: 100%;
+}
+.info-game-menu {
+  display: flex;
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+}
+.button-decription-game-menu {
+  border: 1px solid #0000ff66;
+  border-radius: 10px;
+  background: white;
+  color: #0000ff66;
+  font-weight: bold;
+  height: 30px;
+}
+.button-decription-game-menu:hover {
+  border: 1px solid #0000ff66;
+  border-radius: 10px;
+  background: #0000ff66;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+}
+.btn-all-game-menu {
+  width: 20%;
+  text-align: center;
+}
+.title-game-menu {
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid;
+  width: 60%;
+  height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+.title-game-menu:hover {
+  background-color: #0000ff66;
+  color: white;
+}
+.title-game-play {
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid;
+  width: 30%;
+  height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+.title-game-play:hover {
+  background-color: #0000ff66;
+  color: white;
+}
+.title-game-menu-info {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.infomation-game-menu h2 {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.infomation-game-menu h2:hover {
+  color: #0000ff66;
+}
+.infomation-game-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.game-play-much {
+  display: flex;
+  flex-direction: row;
+  gap: 63px;
+}
+.img-game-play-much3 {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  background-image: url(images/most-play/Eurotruck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.img-game-play-much1 {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  background-image: url(images/most-play/Farmtogether.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.img-game-play-much2 {
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  background-image: url(images/most-play/Pacman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.info-game-play-much {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.info-game-play-much h2 {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.info-game-play-much h2:hover {
+  color: #0000ff66;
+}
+.div-game-play {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-game-play-much i {
+  font-size: 40px;
+  position: absolute;
+  top: 99px;
+  left: 141px;
+  z-index: 999;
+  color: white;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #00000059;
+  border-radius: 100%;
+  padding: 11px;
+  background: #4950575c;
+  cursor: pointer;
+}
+.info-game-play-much i:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  background: #495057ba;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.icon-play-clip {
+  background: gray;
+  background-color: gray;
+  padding: 125px;
+  opacity: 0.5;
+  border-radius: 15px;
+  position: relative;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  font-size: 20px;
+  padding: 40px 0;
 }
